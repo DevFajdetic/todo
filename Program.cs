@@ -111,7 +111,7 @@ app.MapPut("api/TodoItem/{id}/ToggleIsCompleted", async (
             await dbContext.SaveChangesAsync();
 
             return Results.Ok();
-}).RequireAuthorization();Ł
+}).RequireAuthorization();
 
 app.MapFallbackToFile("index.html");
 
